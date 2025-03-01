@@ -1,0 +1,192 @@
+/* Here will be execute all the necessay css code ...  */
+
+
+/* Common and all reset code starts here */ 
+
+*{
+    box-sizing: border-box;
+    
+    padding: 0px;
+    margin: 0px;
+    
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+
+}    
+
+html{
+   scroll-behavior: smooth;
+}
+
+
+
+body{ 
+
+   background-color: antiquewhite; 
+   width: 95%;
+   max-width: 100%;
+   margin: auto;
+
+   box-shadow: 4px 4px 4px coral, -4px 4px 4px coral;
+   
+   
+}   
+
+/* Common and all reset code Ends here */ 
+
+
+/* Header section starts here */ 
+header{
+    background-color: black;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+
+
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    min-height: 5vh;
+} 
+
+.logo-figure{ 
+
+   border: 2px solid white;
+   border-radius: 20px;
+   background-color: goldenrod;
+
+   transition: all 0.6s; 
+   margin: 5px;
+ 
+}   
+
+#menu-icon{
+    color: white;
+    border: 2px solid hotpink;
+    padding: 3px;
+    margin-bottom: 10px;
+   
+   
+    display: none;
+
+    
+    transition: all 0.6s;  
+} 
+
+ 
+#menu-icon:hover{ 
+
+    box-shadow: 5px 5px 5px coral, -5px 5px 5px coral;
+
+}
+ 
+.logo-figure:hover{
+    background-color: green;  
+    transform: scale(1.1);
+    
+     
+}
+.logo{  
+
+   font-size: 30px;
+   padding: 10px;
+   color:white;
+      
+}  
+.logo:hover{
+    color: yellow;
+    
+}
+
+
+nav ul li{ 
+    
+   display: inline-block; 
+   margin: 10px;
+   padding: 8px;
+   border: 2px solid green;
+   border-radius: 20px; 
+
+   transition: all 0.6s; 
+    
+
+} 
+nav ul li:last-child{
+    margin: 0px;
+} 
+nav ul li:hover{
+    background-color: indigo;
+}
+.nav-link{ 
+
+   color: white;
+   cursor: pointer;
+  transition: all 0.6s;
+   
+
+}  
+
+.nav-link:hover{
+   text-decoration: underline;
+   text-decoration-color: pink; 
+}
+
+
+
+/* Responsive section starts here */ 
+
+
+@media screen and (max-width: 992){
+
+}
+@media screen and (max-width: 720){
+    
+}
+@media screen and (max-width: 600px){
+ header{
+     flex-direction: column;
+ }
+
+.logo-figure{
+    margin-bottom: 20px;
+} 
+
+#menu-icon{
+    display: block;
+    cursor: pointer; 
+
+
+} 
+
+.hidden{
+    display: none;
+}
+
+ nav ul li{
+     display: block;
+      
+     font-size: 10px;
+     margin-right: 0px;
+     text-align: center;  
+     margin: 10px 0px;
+ 
+
+ }   
+
+
+ 
+}         
+ 
+@media screen and (max-width: 400){
+     
+}
+ 
+
+/* Responsive Section ends here */ 
+
+
+/* Header Section Ends Here */ 
